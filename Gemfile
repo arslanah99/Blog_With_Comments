@@ -34,8 +34,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
 
 #Modern CSS framework with flexbox
 gem 'bulma-rails', '~> 0.7.4'
@@ -63,6 +61,11 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   #Guard command line tool
   gem 'guard', '~> 2.15'
+  #Guard live reload
+  gem 'guard-livereload', '~> 2.5', require: false
+
+  # Make errors better looking
+gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
